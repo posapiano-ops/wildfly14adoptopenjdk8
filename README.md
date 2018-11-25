@@ -1,10 +1,11 @@
-# wildfly14adoptopenjdk8
-Wildfly 14 on adopt openjdk 8
+# Wildfly 14 on AdoptOpenjdk8
 
 Image uses AdoptOpenJDK 8 (8u172) installed on ubuntu as a first layer. 
 https://github.com/AdoptOpenJDK/openjdk-docker/blob/master/8/jdk/ubuntu/Dockerfile.hotspot.releases.full
 
-Next layer installs Wildfly 14, necessary drivers (postgres driver) and sets jboss as an user instead of root.
+Next layer installs Wildfly 14, necessary drivers (postgres driver), Eclipselink 2.7.2 and sets jboss as an user instead of root.
+
+Java EE8, Java 8 
 
 Recommended way to use this image is to build your application in to next layer using own docker image like this:
 
