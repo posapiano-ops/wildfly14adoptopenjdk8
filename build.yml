@@ -2,4 +2,4 @@ version: '2'
 services:
   wildfly:
     build: .
-    image: posapiano-ops/wildfly14jdk8
+    image: posapiano/wildfly14jdk8
