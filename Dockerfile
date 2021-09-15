@@ -1,6 +1,10 @@
 # Based on adopt openjdk 8
 FROM adoptopenjdk/openjdk8:jdk8u172-b11
-MAINTAINER sami.volotinen@gmail.com
+LABEL maintainer="posapiano-ops rfiorito@outlook.it"
+
+RUN apt update \
+     && apt install -y pdftk qrencode dmtx-utils imagemagick \ 
+     && rm -rf /var/lib/apt/lists/*
 
 ENV WILDFLY_VERSION 14.0.1.Final
 ENV WILDFLY_SHA1 757d89d86d01a9a3144f34243878393102d57384
