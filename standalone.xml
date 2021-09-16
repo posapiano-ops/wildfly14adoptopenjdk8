@@ -159,7 +159,7 @@
                     </pool>
                     <security>
                         <user-name>${env.POSTGRES_DB_USERNAME:postgres}</user-name>
-                        <password>${env.POSTGRES_DB_PASSWORD:user123}</password>
+                        <password>${env.POSTGRES_DB_PASSWORD:password}</password>
                     </security>
                     <validation>
                         <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLValidConnectionChecker"/>
